@@ -11,7 +11,9 @@
 	-- CREATE TABLE table_name (
 		-- table_id serial,
 		-- table_column data_type,
-		-- table_column data_type
+		-- table_column data_type,
+		-- CONSTRAINT PK_column_name PRIMARY KEY(table_value, table_value2),
+		-- CONSTRAINT FK_column_name FOREIGN KEY(table_value) REFERENCES table_name(table_value)
 	-- );
 	
 -- INSERT TEMPLATE:
@@ -34,7 +36,17 @@
 
 -- TABLE CREATION SCHEMA
 
+DROP TABLE IF EXISTS type, pokemon, pokemon_type, evolution CASCADE;
 
+-- Type Table:
+
+-- type_id (Primary Key)
+-- type_name (e.g., Grass, Water, Fire)
+
+CREATE TABLE type (
+	type_id SERIAL PRIMARY KEY,
+	type_name VARCHAR(15) NOT NULL
+	);
 
 -- Pokemon Table:
 
@@ -49,40 +61,66 @@
 -- special_attack
 -- special_defense
 
--- DROP TABLE pokemon IF EXISTS CASCADE;
-
 CREATE TABLE pokemon ( 
 	pokemon_id SERIAL PRIMARY KEY,
-	name VARCHAR,
-	type VARCHAR(15),
-	total INT(),
-	hp INT(),
-	attack INT(),
-	defense INT(),
-	speed INT(),
-	special_attack INT(),
-	special_defense INT()
+	name VARCHAR(40),
+	types VARCHAR(40),
+	total INT,
+	hp INT,
+	attack INT,
+	defense INT,
+	speed INT,
+	special_attack INT,
+	special_defense INT
 	);
 
-INSERT INTO pokemon (name, type, total, hp, attack, defense, speed, special_attack, special_defense)
-VALUES ('Bulbasaur', 'Grass', 318, 45, 49, 49, 45, 65, 65);
 
+-- Pokemon Type Table:
 
+-- pokemon_id (Primary Key / Foreign Key from Pokemon table)
+-- type_id (Primary Key / Foreign Key from Type table)
 
--- Type Table:
-
--- type_id (Primary Key)
--- type_name (e.g., Grass, Water, Fire)
-
-CREATE TABLE type
-	type_id SERIAL PRIMARY KEY
-	type_name VARCHAR(15) NOT NULL;
-
+CREATE TABLE pokemon_type (
+	pokemon_id INT NOT NULL,
+	type_id INT NOT NULL,
+	CONSTRAINT PK_pokemon_type PRIMARY KEY(pokemon_id, type_id),
+	CONSTRAINT FK_pokemon_id FOREIGN KEY(pokemon_id) REFERENCES pokemon(pokemon_id),
+	CONSTRAINT FK_type_id FOREIGN KEY(type_id) REFERENCES type(type_id)
+	);
+	
+	
 -- Evolution Chart Table:
 
 -- evolution_id (Primary Key)
 -- pokemon_name (Foreign Key to Pokemon Catalog Table)
--- base_stats (JSON or another suitable data type to store base stats)
+-- type (Foreign key to Type Table)
+
+CREATE TABLE evolution (
+    evolution_id SERIAL,
+	pokemon_id INT NOT NULL,
+	type_id INT NOT NULL,
+	CONSTRAINT PK_evolution PRIMARY KEY(evolution_id),
+    CONSTRAINT FK_pokemon_id FOREIGN KEY(pokemon_id) REFERENCES pokemon(pokemon_id),
+	CONSTRAINT FK_type_id FOREIGN KEY(type_id) REFERENCES type(type_id)
+    );
+	
+
+
+-- Species Table:
+
+-- species_id (Primary Key)
+-- species_name
+
+
+
+
+-- Pokemon Species Table:
+
+-- pokemon_id (Primary Key, Foreign Key to Pokedex Data Table)
+-- species_id (Foreign Key to Species Table)
+
+
+
 
 
 
@@ -124,21 +162,6 @@ CREATE TABLE type
 
 
 
--- Species Table:
-
--- species_id (Primary Key)
--- species_name
-
-
-
--- Pokemon Species Table:
-
--- pokemon_id (Primary Key, Foreign Key to Pokedex Data Table)
--- species_id (Foreign Key to Species Table)
-
-
-
-
 
 -- This schema allows you to link various aspects of 
 -- Pokémon data, such as types, evolutions, training, 
@@ -148,3 +171,8 @@ CREATE TABLE type
 -- efficient queries to retrieve information about 
 -- specific Pokémon, their evolutions, types, abilities, 
 -- and more.
+
+-- INSERTS
+
+INSERT INTO pokemon (name, types, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES ('Bulbasaur', 'Grass' || ' | ' || 'Poison', 318, 45, 49, 49, 45, 65, 65);
