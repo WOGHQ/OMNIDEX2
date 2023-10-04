@@ -36,7 +36,7 @@
 
 -- TABLE CREATION SCHEMA
 
-DROP TABLE IF EXISTS type, pokemon, pokemon_type, evolution CASCADE;
+DROP TABLE IF EXISTS type, pokemon, pokemon_type, evolution, species, pokemon_species CASCADE;
 
 -- Type Table:
 
@@ -111,7 +111,10 @@ CREATE TABLE evolution (
 -- species_id (Primary Key)
 -- species_name
 
-
+CREATE TABLE species (
+    species_id SERIAL PRIMARY KEY,
+    species_name VARCHAR(50)
+    );
 
 
 -- Pokemon Species Table:
@@ -120,7 +123,12 @@ CREATE TABLE evolution (
 -- species_id (Foreign Key to Species Table)
 
 
-
+CREATE TABLE pokemon_species (
+    pokemon_id INT NOT NULL,
+    species_id INT NOT NULL,
+    CONSTRAINT FK_pokemon_id FOREIGN KEY(pokemon_id) REFERENCES pokemon(pokemon_id),
+    CONSTRAINT FK_species_id FOREIGN KEY(species_id) REFERENCES species(species_id)
+    );
 
 
 
