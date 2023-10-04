@@ -4,35 +4,79 @@
 
 -- TEMPLATES BELOW:
 
+-- DROP TABLE TEMPLATE
+	-- DROP TABLE table_name IF EXISTS CASCADE;
+	
 -- CREATE TEMPLATE:
 	-- CREATE TABLE table_name (
 		-- table_id serial,
 		-- table_column data_type,
 		-- table_column data_type
 	-- );
-
+	
 -- INSERT TEMPLATE:
-	-- INSERT INTO table_name (table_column, table_column1)
-	-- VALUES
+	-- INSERT INTO table_name
+	-- VALUES (table_value = value, table_value2 = value2)
 	-- );
-
+	
 -- ALTER TABLE TEMPLATE:
-	-- ALTER TABLE table_name
-	-- ADD COLUMN table_column3 (data_type, table_column4 data_type);
+	-- ALTER TABLE table_name 
+	-- ADD COLUMN table_column3 data_type SET NOT NULL;
+	
+-- DELETE TEMPLATE:
+	-- DELETE FROM table_name
+	-- WHERE table_column = table_value
+
+-- ADD DROP TABLE TEMPLATE FOR EACH TABLE TO AVOID DUPLICATES
+
+-- GO THROUGH THE TABLE CREATION SCHEMA BELOW AND USE THE PROPER TEMPLATES TO
+-- CREATE AND POPULATE ALL OF THE TABLES AND COLUMNS.
 
 -- TABLE CREATION SCHEMA
 
--- GO THROUGH EACH TABLE BELOW AND USE THE CREATE TEMPLATE TO
--- FILL OUT ALL OF THE TABLES AND COLUMNS BASED ON THE REQUIREMENTS.
+
+
+-- Pokemon Table:
+
+-- pokemon_id (Primary Key)
+-- name = pokemon name
+-- type (Foreign Key to Type Table)
+-- total (sum of all base stats)
+-- hp
+-- attack
+-- defense
+-- speed
+-- special_attack
+-- special_defense
+
+-- DROP TABLE pokemon IF EXISTS CASCADE;
+
+CREATE TABLE pokemon ( 
+	pokemon_id SERIAL PRIMARY KEY,
+	name VARCHAR,
+	type VARCHAR(15),
+	total INT(),
+	hp INT(),
+	attack INT(),
+	defense INT(),
+	speed INT(),
+	special_attack INT(),
+	special_defense INT()
+	);
+
+INSERT INTO pokemon (name, type, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES ('Bulbasaur', 'Grass', 318, 45, 49, 49, 45, 65, 65);
 
 
 
 -- Type Table:
 
 -- type_id (Primary Key)
--- type (e.g., Grass, Water, Fire)
+-- type_name (e.g., Grass, Water, Fire)
 
 CREATE TABLE type
+	type_id SERIAL PRIMARY KEY
+	type_name VARCHAR(15) NOT NULL;
 
 -- Evolution Chart Table:
 
@@ -94,26 +138,13 @@ CREATE TABLE type
 
 
 
--- Pokemon Catalog Table:
-
--- pokemon_id (Primary Key)
--- pokemon_name
--- type (Foreign Key to Type Table)
--- total (sum of all base stats)
--- hp
--- attack
--- defense
--- speed
--- special_attack
--- special_defense
 
 
-
--- This schema allows you to link various aspects of
--- Pokémon data, such as types, evolutions, training,
--- breeding, and catalog information, in a relational
--- database. You can establish foreign key relationships
--- between tables to maintain data integrity and enable
--- efficient queries to retrieve information about
--- specific Pokémon, their evolutions, types, abilities,
+-- This schema allows you to link various aspects of 
+-- Pokémon data, such as types, evolutions, training, 
+-- breeding, and catalog information, in a relational 
+-- database. You can establish foreign key relationships 
+-- between tables to maintain data integrity and enable 
+-- efficient queries to retrieve information about 
+-- specific Pokémon, their evolutions, types, abilities, 
 -- and more.
