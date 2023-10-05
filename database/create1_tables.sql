@@ -112,8 +112,9 @@ CREATE TABLE evolution (
 -- species_name
 
 CREATE TABLE species (
-    species_id SERIAL PRIMARY KEY,
-    species_name VARCHAR(50)
+    species_id SERIAL PRIMARY KEY UNIQUE,
+    species_name VARCHAR(50),
+    UNIQUE (species_id)
     );
 
 

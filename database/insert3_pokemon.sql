@@ -7,7 +7,7 @@
 	-- VALUES ('table_value', 'table_value2');
 
 
--- INSERT INTO pokemon (name, gender, type_name, total, hp, attack, defense, speed, special_attack, special_defense)
+-- INSERT INTO pokemon (name, type_name, total, hp, attack, defense, speed, special_attack, special_defense)
 -- VALUES ('Bulbasaur', 'Grass' || ' | ' || 'Poison', 318, 45, 49, 49, 45, 65, 65);
 
 
@@ -74,5 +74,5 @@
 
 -- POKEMON TABLE INSERTS:
 
-INSERT INTO pokemon (name, gender, type_name, total, hp, attack, defense, speed, special_attack, special_defense)
-VALUES ('Bulbasaur', '87.5% Male, 12.5% Female', 'Grass' || ' | ' || 'Poison', 318, 45, 49, 49, 45, 65, 65);
+INSERT INTO pokemon (name, type_name, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES ('Bulbasaur', 'Grass', 318, 45, 49, 49, 45, 65, 65);
