@@ -15,12 +15,7 @@
 		-- CONSTRAINT PK_column_name PRIMARY KEY(table_value, table_value2),
 		-- CONSTRAINT FK_column_name FOREIGN KEY(table_value) REFERENCES table_name(table_value)
 	-- );
-	
--- INSERT TEMPLATE:
-	-- INSERT INTO table_name
-	-- VALUES (table_value = value, table_value2 = value2)
-	-- );
-	
+
 -- ALTER TABLE TEMPLATE:
 	-- ALTER TABLE table_name 
 	-- ADD COLUMN table_column3 data_type SET NOT NULL;
@@ -37,7 +32,7 @@
 -- TABLE CREATION SCHEMA
 
 DROP TABLE IF EXISTS type, pokemon, pokemon_type, evolution, species, pokemon_species, type_effective, training, egg_group, pokemon_egg_group, 
-breeding CASCADE;
+breeding, ability, pokemon_ability CASCADE;
 
 -- Type Table:
 
@@ -50,7 +45,6 @@ CREATE TABLE type (
 	UNIQUE (type_id, type_name)
 	);
 
--- Pokemon Table:
 
 -- pokemon_id (Primary Key)
 -- name = ("Pokemon_Name")
@@ -64,16 +58,18 @@ CREATE TABLE type (
 -- special_defense = (65)
 
 CREATE TABLE pokemon ( 
-	pokemon_id SERIAL PRIMARY KEY,
+	pokemon_id SERIAL PRIMARY KEY UNIQUE,
 	name VARCHAR(40),
-	type_id VARCHAR(40),
+	type_name VARCHAR NOT NULL,
 	total INT,
 	hp INT,
 	attack INT,
 	defense INT,
 	speed INT,
 	special_attack INT,
-	special_defense INT
+	special_defense INT,
+	CONSTRAINT FK_type_name FOREIGN KEY (type_name) REFERENCES type(type_name),
+	UNIQUE (pokemon_id)
 	);
 
 
@@ -226,7 +222,7 @@ CREATE TABLE breeding (
     breeding_id SERIAL PRIMARY KEY,
     pokemon_id INT NOT NULL,
     egg_groups VARCHAR(30),
-    gender VARCHAR(15),
+    gender VARCHAR(40),
     egg_cycles INT,
     steps VARCHAR(20),
     CONSTRAINT FK_pokemon_id FOREIGN KEY(pokemon_id) REFERENCES pokemon(pokemon_id),
