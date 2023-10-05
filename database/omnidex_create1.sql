@@ -66,7 +66,7 @@ CREATE TABLE type (
 CREATE TABLE pokemon ( 
 	pokemon_id SERIAL PRIMARY KEY,
 	name VARCHAR(40),
-	types VARCHAR(40),
+	type_id VARCHAR(40),
 	total INT,
 	hp INT,
 	attack INT,
@@ -233,12 +233,26 @@ CREATE TABLE breeding (
     CONSTRAINT UC_breeding UNIQUE (pokemon_id)
     );
 
+
+
 -- Ability Table:
 
 -- ability_id (Primary Key)
 -- ability_name (Name of ability)
--- type_id (Primary Key to Type Table)
--- type_name (Foreign key to Type Table)
+-- main_ability (Boolean | Displays as regular ability if true | Displays as empty if false )
+    -- will run a method to check if the ability is a main ability for the pokemon
+        -- if yes we will return the main ability or abilities grouped by pokemon_id in the main ability display box
+-- hidden_ability (Boolean | Displays as regular ability if false | Displays as hidden ability if true)
+    -- will run a method to check if the ability is a hidden ability for the pokemon if yes we will
+        -- return the hidden ability or abilities grouped by pokemon_id in the hidden ability display box
+
+CREATE TABLE ability (
+    ability_id SERIAL PRIMARY KEY UNIQUE,
+    ability_name VARCHAR(40) UNIQUE,
+    main_ability BOOLEAN,
+    hidden_ability BOOLEAN,
+    UNIQUE (ability_id, ability_name)
+    );
 
 
 
@@ -246,10 +260,12 @@ CREATE TABLE breeding (
 
 -- ability_id (Primary Key, Foreign Key to Ability table)
 -- pokemon_id (Primary Key, Foreign Key to Pokemon table)
--- base_ability (Boolean | Displays as regular ability if true | Displays as empty if false )
--- hidden_ability (Boolean | Displays as regular ability if false | Displays as hidden ability if true)
 
-
+CREATE TABLE pokemon_ability (
+    ability_id INT NOT NULL,
+    pokemon_id INT NOT NULL,
+    CONSTRAINT UC_pokemon_ability UNIQUE (ability_id, pokemon_id)
+    );
 
 -- Pokemon With Hidden Ability Table:
 
@@ -272,7 +288,9 @@ CREATE TABLE breeding (
 -- weight (Weight of Pokemon)
 -- abilities (Shows base ability for each pokemon)
 -- hidden_ability (Shows hidden ability for each pokemon) (Foreign Key to Pokemon Hidden Ability Table) ???
-
+-- working on way to show multiple abilities numbered i.e. ("1. Run Away", "2. Guts") cont.
+-- working on way to show hidden ability with label i.e. ("Hustle (Hidden Ability)")
+-- thinking that in the ability table we have two booleans called main ability and hidden ability.
 
 
 -- This schema allows you to link various aspects of 
@@ -283,8 +301,3 @@ CREATE TABLE breeding (
 -- efficient queries to retrieve information about 
 -- specific Pokémon, their evolutions, types, abilities, 
 -- and more.
-
--- INSERTS
-
-INSERT INTO pokemon (name, types, total, hp, attack, defense, speed, special_attack, special_defense)
-VALUES ('Bulbasaur', 'Grass' || ' | ' || 'Poison', 318, 45, 49, 49, 45, 65, 65);
