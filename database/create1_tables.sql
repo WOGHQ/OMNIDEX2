@@ -74,7 +74,6 @@ CREATE TABLE pokemon (
 	UNIQUE (pokemon_id)
 	);
 
-
 -- Pokemon Type Table:
 
 -- pokemon_id (Primary Key, Foreign Key from Pokemon table)
