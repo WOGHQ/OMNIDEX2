@@ -23,7 +23,7 @@
 -- INSERT TEMPLATE:
 
     -- INSERT INTO pokemon_type (pokemon_id, type_id)
-    -- VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = ), (SELECT type_id FROM type WHERE type_name = ''));
+    -- VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = ), (SELECT type_id FROM type WHERE type_id = ));
 
 
 
@@ -111,3 +111,83 @@ VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = 12), (SELECT type_id 
 
 INSERT INTO pokemon_type (pokemon_id, type_id)
 VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = 13), (SELECT type_id FROM type WHERE type_id = 3));
+
+INSERT INTO pokemon_type (pokemon_id, type_id)
+VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = 14), (SELECT type_id FROM type WHERE type_id = 12));
+
+INSERT INTO pokemon_type (pokemon_id, type_id)
+VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = 15), (SELECT type_id FROM type WHERE type_id = 3));
+
+INSERT INTO pokemon_type (pokemon_id, type_id)
+VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = 16), (SELECT type_id FROM type WHERE type_id = 12));
+
+INSERT INTO pokemon_type (pokemon_id, type_id)
+VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = 16), (SELECT type_id FROM type WHERE type_id = 10));
+
+INSERT INTO pokemon_type (pokemon_id, type_id)
+VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = 17), (SELECT type_id FROM type WHERE type_id = 12));
+
+INSERT INTO pokemon_type (pokemon_id, type_id)
+VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = 17), (SELECT type_id FROM type WHERE type_id = 8));
+
+INSERT INTO pokemon_type (pokemon_id, type_id)
+VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = 18), (SELECT type_id FROM type WHERE type_id = 12));
+
+INSERT INTO pokemon_type (pokemon_id, type_id)
+VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = 18), (SELECT type_id FROM type WHERE type_id = 8));
+
+INSERT INTO pokemon_type (pokemon_id, type_id)
+VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = 19), (SELECT type_id FROM type WHERE type_id = 12));
+
+INSERT INTO pokemon_type (pokemon_id, type_id)
+VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = 19), (SELECT type_id FROM type WHERE type_id = 8));
+
+INSERT INTO pokemon_type (pokemon_id, type_id)
+VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = 20), (SELECT type_id FROM type WHERE type_id = 12));
+
+INSERT INTO pokemon_type (pokemon_id, type_id)
+VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = 20), (SELECT type_id FROM type WHERE type_id = 8));
+
+
+
+-- ******************************************************************************************************* --
+-- ************************************ :STOPPED WORKING HERE MARKER: ************************************ --
+-- ******************************************************************************************************* --
+
+
+
+INSERT INTO pokemon_type (pokemon_id, type_id)
+VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = 21), (SELECT type_id FROM type WHERE type_id = 1));
+
+INSERT INTO pokemon_type (pokemon_id, type_id)
+VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = 21), (SELECT type_id FROM type WHERE type_id = 10));
+
+-- INSERT INTO pokemon_type (pokemon_id, type_id)
+-- VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = ), (SELECT type_id FROM type WHERE type_id = ''));
+--
+-- INSERT INTO pokemon_type (pokemon_id, type_id)
+-- VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = ), (SELECT type_id FROM type WHERE type_id = ''));
+--
+-- INSERT INTO pokemon_type (pokemon_id, type_id)
+-- VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = ), (SELECT type_id FROM type WHERE type_id = ''));
+--
+-- INSERT INTO pokemon_type (pokemon_id, type_id)
+-- VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = ), (SELECT type_id FROM type WHERE type_id = ''));
+--
+-- INSERT INTO pokemon_type (pokemon_id, type_id)
+-- VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = ), (SELECT type_id FROM type WHERE type_id = ''));
+--
+-- INSERT INTO pokemon_type (pokemon_id, type_id)
+-- VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = ), (SELECT type_id FROM type WHERE type_id = ''));
+--
+-- INSERT INTO pokemon_type (pokemon_id, type_id)
+-- VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = ), (SELECT type_id FROM type WHERE type_id = ''));
+--
+-- INSERT INTO pokemon_type (pokemon_id, type_id)
+-- VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = ), (SELECT type_id FROM type WHERE type_id = ''));
+--
+-- INSERT INTO pokemon_type (pokemon_id, type_id)
+-- VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = ), (SELECT type_id FROM type WHERE type_id = ''));
+--
+-- INSERT INTO pokemon_type (pokemon_id, type_id)
+-- VALUES ((SELECT pokemon_id FROM pokemon WHERE pokemon_id = ), (SELECT type_id FROM type WHERE type_id = ''));

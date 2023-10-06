@@ -45,6 +45,7 @@ CREATE TABLE type (
 	UNIQUE (type_id, type_name)
 	);
 
+-- Pokemon Table:
 
 -- pokemon_id (Primary Key)
 -- national_id (National Pokemon Number)
