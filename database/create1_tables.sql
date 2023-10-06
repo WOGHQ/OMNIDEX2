@@ -48,7 +48,6 @@ CREATE TABLE type (
 
 -- pokemon_id (Primary Key)
 -- name = ("Pokemon_Name")
--- types = ("Grass | Poison") | (displays all of the types for each pokemon)
 -- total = (318) | (sum of all base stats)
 -- hp = (45)
 -- attack = (49)

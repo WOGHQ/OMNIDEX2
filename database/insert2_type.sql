@@ -26,6 +26,7 @@ VALUES ('Water');
 INSERT INTO type (type_name)
 VALUES ('Electric');
 
+-- #5: GRASS
 INSERT INTO type (type_name)
 VALUES ('Grass');
 

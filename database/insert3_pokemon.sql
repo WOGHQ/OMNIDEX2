@@ -70,9 +70,22 @@
 
                     -- :DB 10/5/2023:
 
+
+                    -- SELECT Pokemon Name and Types:
+
+                    -- SELECT p.name, t.type_name
+                    -- FROM pokemon_type pt
+                    -- JOIN pokemon p
+                    -- ON pt.pokemon_id = p.pokemon_id
+                    -- JOIN type t
+                    -- ON pt.type_id = t.type_id
+                    -- WHERE p.name = '?'
+                    -- GROUP BY p.name, t.type_name;
+
+
 -- ************************************************************************************************** --
 
 -- POKEMON TABLE INSERTS:
 
-INSERT INTO pokemon (name, type_name, total, hp, attack, defense, speed, special_attack, special_defense)
-VALUES ('Bulbasaur', 'Grass', 318, 45, 49, 49, 45, 65, 65);
+INSERT INTO pokemon (name, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES ('Bulbasaur', 318, 45, 49, 49, 45, 65, 65);
