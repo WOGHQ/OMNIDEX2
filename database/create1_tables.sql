@@ -60,7 +60,6 @@ CREATE TABLE type (
 CREATE TABLE pokemon ( 
 	pokemon_id SERIAL PRIMARY KEY UNIQUE,
 	name VARCHAR(40),
-	type_name VARCHAR NOT NULL,
 	total INT,
 	hp INT,
 	attack INT,
@@ -68,7 +67,6 @@ CREATE TABLE pokemon (
 	speed INT,
 	special_attack INT,
 	special_defense INT,
-	CONSTRAINT FK_type_name FOREIGN KEY (type_name) REFERENCES type(type_name),
 	UNIQUE (pokemon_id)
 	);
 
