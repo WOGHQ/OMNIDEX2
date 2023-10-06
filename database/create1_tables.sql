@@ -47,7 +47,9 @@ CREATE TABLE type (
 
 
 -- pokemon_id (Primary Key)
+-- national_id (National Pokemon Number)
 -- name = ("Pokemon_Name")
+-- nickname = ("Mega Charizard X")
 -- total = (318) | (sum of all base stats)
 -- hp = (45)
 -- attack = (49)
@@ -58,7 +60,9 @@ CREATE TABLE type (
 
 CREATE TABLE pokemon ( 
 	pokemon_id SERIAL PRIMARY KEY UNIQUE,
+	national_id INT,
 	name VARCHAR(40),
+	nickname VARCHAR(40),
 	total INT,
 	hp INT,
 	attack INT,
