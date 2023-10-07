@@ -393,6 +393,138 @@ VALUES (0078, 'Rapidash', '', 500, 65, 100, 70, 105, 80, 80);
 INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
 VALUES (0078, 'Rapidash', 'Galarian Rapidash', 500, 65, 100, 70, 105, 80, 80);
 
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0079, 'Slowpoke', '', 315, 90, 65, 65, 15, 40, 40);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0079, 'Slowpoke', 'Galarian Slowpoke', 315, 90, 65, 65, 15, 40, 40);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0080, ‘Slowbro’, '', 490, 95, 75, 110, 30, 100, 80);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0080, ‘Slowbro’, 'Mega Slowbro', 590, 95, 75, 480, 30, 130, 80);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0080, ‘Slowbro’, 'Galarian Slowbro', 490, 95, 100, 95, 30, 100, 70);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0081, ‘Magnemite’, '', 325, 25, 35, 70, 45, 95, 55);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0082, ‘Magneton’, '', 465, 50, 60, 95, 70, 120, 70);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0083, ‘Farfetch’d’, '', 377, 52, 90, 55, 60, 58, 62);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0083, ‘Farfetch’d’, ‘Galarian Farfetch’d', 377, 52, 95, 55, 55, 58, 62);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0084, ‘Doduo’, '', 310, 35, 85, 45, 75, 35, 35);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0085, 'Dodrio', '', 470, 60, 110, 70, 110, 60, 60);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0086, ‘Seel’, '',325, 65, 45, 55, 45, 45, 70);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0087, ‘Dewgong’, '',475, 90, 70, 80, 70, 70, 95);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0088, ‘Grimer’, '', 325, 80, 80, 50, 25, 40, 50);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0088, ‘Grimer’, 'Alolan Grimer', 325, 80, 80, 50, 25, 40, 50);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0089, ‘Muk’, '', 500, 105, 105, 75, 50, 65, 100);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0089, ‘Muk, 'Alolan Muk', 500, 105, 105, 75, 50, 65, 100);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0090, ‘Shellder’, '', 305, 30, 65, 100, 40, 45, 25);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0091, ‘Cloyster’, '', 525, 50, 95, 180, 70, 85, 45);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0092, ‘Gastly’, '', 310, 30, 35, 30, 80, 100, 35);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0093, ‘Haunter’, '', 525, 50, 95, 180, 70, 85, 45);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0094, ‘Gengar’, '', 500, 60, 65, 60, 110, 130, 75);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0094, ‘Gengar’, 'Mega Gengar', 600, 60, 65, 80, 130, 170, 95);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0095, ‘Onix’, '', 385, 35, 45, 160, 70, 30, 45);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0096, ‘Drowzee’, '', 328, 60, 48, 45, 42, 43, 90);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0097, ‘Hypno, '', 483, 85, 73, 70, 67, 73, 115);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0098, ‘Krabby’, '', 325, 30, 105, 90, 50, 25, 25);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0099, ‘Kingler’, '', 475, 55, 130, 115, 75, 50, 50);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0100, ‘Voltorb’, '', 330, 40, 30, 50, 100, 55, 55);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0100, ‘Voltorb’, 'Hisuian Voltorb', 330, 40, 30, 50, 100, 55, 55);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0101, ‘Electrode’, '', 490, 60, 50, 70, 150, 80, 80);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0101, ‘Electrode’, 'Hisuian Electrode', 490, 60, 50, 70, 150, 80, 80);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0102, ‘Exeggcute’, '', 325, 60, 40, 80, 40, 60, 45);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0103, ‘Exeggutor’, '', 530, 95, 95, 85, 55, 125, 75);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0103, ‘Exeggutor, 'Alolan Exeggutor', 530, 105, 95, 85, 45, 125, 75);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0104, ‘Cubone’, '', 320, 50, 50, 95, 35, 40, 50);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0105, ‘Marowak’, '', 425, 60, 80, 110, 45, 50, 80);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0105, ‘Marowak’, 'Alolan Marowak', 425, 60, 80, 110, 45, 50, 80);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0106, ‘Hitmonlee’, '', 455, 50, 120, 53, 87, 35, 110);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0107, ‘Hitmonchan’, '', 455, 50, 105, 79, 76, 35, 110);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0108, ‘Lickitung’, '', 385, 90, 55, 75, 30, 60, 75);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0109, ‘Koffing’, '', 340, 40, 65, 95, 35, 60, 45);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0110, ‘Weezing’, '', 490, 65, 90, 120, 60, 85, 70);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
+VALUES (0110, ‘Weezing’, 'Galarian Weezing', 490, 65, 90, 120, 60, 85, 70);
+
 
 -- INSERT EVERY NEW POKEMON ABOVE THIS LINE. THIS TEMPLATE IS HERE FOR QUICK ACCESS.
 
