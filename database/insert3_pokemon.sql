@@ -442,7 +442,7 @@ INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, sp
 VALUES (0089, 'Muk', '', 500, 105, 105, 75, 50, 65, 100);
 
 INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
-VALUES (0089, 'Muk, 'Alolan Muk', 500, 105, 105, 75, 50, 65, 100);
+VALUES (0089, 'Muk', 'Alolan Muk', 500, 105, 105, 75, 50, 65, 100);
 
 INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
 VALUES (0090, 'Shellder', '', 305, 30, 65, 100, 40, 45, 25);
@@ -469,7 +469,7 @@ INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, sp
 VALUES (0096, 'Drowzee', '', 328, 60, 48, 45, 42, 43, 90);
 
 INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
-VALUES (0097, 'Hypno, '', 483, 85, 73, 70, 67, 73, 115);
+VALUES (0097, 'Hypno', '', 483, 85, 73, 70, 67, 73, 115);
 
 INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
 VALUES (0098, 'Krabby', '', 325, 30, 105, 90, 50, 25, 25);
@@ -496,7 +496,7 @@ INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, sp
 VALUES (0103, 'Exeggutor', '', 530, 95, 95, 85, 55, 125, 75);
 
 INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
-VALUES (0103, 'Exeggutor, 'Alolan Exeggutor', 530, 105, 95, 85, 45, 125, 75);
+VALUES (0103, 'Exeggutor', 'Alolan Exeggutor', 530, 105, 95, 85, 45, 125, 75);
 
 INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense)
 VALUES (0104, 'Cubone', '', 320, 50, 50, 95, 35, 40, 50);
