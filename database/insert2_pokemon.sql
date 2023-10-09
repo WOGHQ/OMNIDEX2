@@ -47,7 +47,7 @@
                    -- that or just update the main database tables like we are here... I don't
                    -- why we couldn't just do that... it seems like the most simple idea.
                    -- Until then. Here we are. The Pokemon Table was moved into a file called
-                   -- insert3_pokemon.sql. It is to be understood that the SQL files in the
+                   -- insert2_pokemon.sql. It is to be understood that the SQL files in the
                    -- database folder should be ran in your Local OMNIDEX Database in the order
                    -- of numbers in the folder i.e:
 
@@ -65,7 +65,7 @@
 
                         -- create1_tables.sql
                         -- insert2_type.sql
-                        -- insert3_pokemon.sql
+                        -- insert2_pokemon.sql
 
 
                     -- :DB 10/5/2023:
