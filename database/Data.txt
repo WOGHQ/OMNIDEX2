@@ -78,15 +78,13 @@ INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, sp
 
 INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense) VALUES (0028, 'Alolan Sandslash', '', 450, 75, 100, 120, 65, 25, 65);
 
-Nidoran♀0029	Nidoran♀	POISON
-275	55	47	52	40	40	41
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense) VALUES (0029, 'Nidoran♀', '', 275, 55, 47, 52, 41, 40, 40);
 
 INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense) VALUES (0030, 'Nidorina', '', 365, 70, 62, 67, 56, 55, 55);
 
 INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense) VALUES (0031, 'Nidoqueen', '', 505, 90, 92, 87, 76, 75, 85);
 
-Nidoran♂0032	Nidoran♂	POISON
-273	46	57	40	40	40	50
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense) VALUES (0032, 'Nidoran♂', '', 273, 46, 57, 40, 50, 40, 40);
 
 INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense) VALUES (0033, 'Nidorino', '', 365, 61, 72, 57, 65, 55, 55);
 
@@ -1606,8 +1604,7 @@ INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, sp
 
 INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense) VALUES (0668, 'Pyroar', '', 507, 86, 68, 72, 106, 109, 66);
 
-Flabébé0669	Flabébé	FAIRY
-303	44	38	39	61	79	42
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense) VALUES (0669, 'Flabébé', '', 303, 44, 38, 39, 42, 61, 79);
 
 INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense) VALUES (0670, 'Floette', '', 371, 54, 45, 47, 52, 75, 98);
 
@@ -1727,12 +1724,9 @@ INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, sp
 
 INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense) VALUES (0717, 'Yveltal', '', 680, 126, 131, 95, 99, 131, 98);
 
-Zygarde (50% Forme)0718	Zygarde
-50% Forme	DRAGON
-GROUND	600	108	100	121	81	95	95
-Zygarde (10% Forme)0718	Zygarde
-10% Forme	DRAGON
-GROUND	486	54	100	71	61	85	115
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense) VALUES (0718, 'Zygarde', '50% Forme', 600, 108, 100, 121, 95, 81, 95);
+
+INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense) VALUES (0718, 'Zygarde', '10% Forme', 486, 54, 100, 71, 115, 61, 85);
 
 INSERT INTO pokemon (national_id, name, nickname, total, hp, attack, defense, speed, special_attack, special_defense) VALUES (0718, 'Zygarde (Complete Forme)', '', 708, 216, 100, 121, 85, 91, 95);
 
